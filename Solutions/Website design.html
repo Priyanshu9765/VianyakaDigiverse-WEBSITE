@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <video autoplay muted loop playsinline class="background-video">
+  <source src="assets/background image vdv.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+    <header>
+  <div class="logo">
+    <img  class="logo-img" src="../assets/vdv fulllogo.png" alt="Vinayaka Digiverse Logo" />
+  </div>
+
+  <nav>
+  <ul class="navbar">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about-us.html">About Us</a></li>
+
+    <li class="dropdown">
+      <a href="#">Solutions ▾</a>
+      <ul class="dropdown-menu">
+
+        <!-- Graphic Design submenu -->
+        <li class="has-submenu">
+          <a href="SMM&M.html">SOCIAL MEDIA<br>
+MANAGEMENT & MARKETING </a>
+        </li>
+
+        <!-- Web Design submenu -->
+        <li class="has-submenu">
+          <a href="Website design.html">WEBSITE DESIGNING &<br>
+ WEBSITE MANAGEMENT</a>
+        </li>
+
+        <!-- Custom Applications submenu -->
+        <li class="has-submenu">
+          <a href="content writing.html">CONTENT WRITING &<br>
+ CONTENT CREATION</a>
+        </li>
+
+        <!-- VIDEO & PRINTING submenu -->
+<li class="has-submenu">
+  <a href="PROFESSIONAL GRAPHICS.html">PROFESSIONAL GRAPHICS<br>
+ DESIGNING & PREMIUM PRINTING</a>
+</li>
+
+        <!-- Marketing submenu -->
+        <li class="has-submenu">
+          <a href="professional photography.html"> PROFESSIONAL PHOTOGRAPHY,<br>
+ VIDEOGRAPHY & CINEMATOGRAPHY </a>
+        </li>
+
+
+               <li class="has-submenu">
+         <a href="PROFESSIONAL VIDEO EDITING.html"> PROFESSIONAL VIDEO EDITING &<br>
+ MOTION GRAPHICS EDITING</a>
+       </li>
+
+      </ul>
+    </li>
+
+    
+    <li><a href="../Blog/blog.html">Blogs</a></li>
+    <li><a href="../Pricing/Pricing.html">Pricing</a></li>
+    <li><a href="../Contact us/contact.html">Get in touch</a></li>
+  </ul>
+</nav>
+
+</header>
+
+<!--This is about us section-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Animated</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .about-header {
+      text-align: center;
+      padding: 100px 20px 20px;
+      /*background: linear-gradient(145deg, #0d0d0d 60%, #111 100%);*/
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .about-header span {
+      color: #ABFF25;
+    }
+
+    .breadcrumb {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .breadcrumb a {
+      color: #ABFF25;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 40px;
+      gap: 60px;
+      background: radial-gradient(circle at center, #111 0%, #0d0d0d 100%);
+      position: relative;
+    }
+
+    .about-images {
+      flex: 1;
+      position: relative;
+    }
+
+    .img-box {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .project-badge {
+      position: relative;
+      bottom: 10px;
+      left: 0px;
+      background: #ABFF25;
+      color: #000;
+      padding: 10px;
+      border-radius: 40px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 5px 15px rgba(204, 255, 0, 0.4);
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
+
+    .project-badge:hover {
+      transform: scale(1.05) rotate(-1deg);
+      background-color: #ABFF25;
+    }
+
+    .project-badge .icon {
+      font-size: 24px;
+    }
+
+    .about-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .about-text h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .about-text h2 span {
+      color: #ABFF25;
+    }
+
+    .about-text p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .features li::before {
+      content: '✔';
+      color: #ABFF25;
+      margin-right: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #222;
+      border: none;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      background: #333;
+    }
+
+    .btn-accent {
+      background: #ABFF25;
+      color: #000;
+    }
+
+    .btn-accent:hover {
+      background: #ABFF25;
+    }
+
+    .stats-box {
+      background: #121212;
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(204, 255, 0, 0.1);
+      width: 200px;
+      margin-top: 30px;
+    }
+
+    .stats-box .percent {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ABFF25;
+    }
+
+    .stats-box .label {
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .stats-box .clients {
+      color: #ABFF25;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Floating Animation */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(-16px);
+      }
+    }
+
+    #ab{
+      margin-top: 100px;
+    }
+
+    
+
+/*Background video */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.web-page {
+  background: radial-gradient(circle, #1d1d1d, #000000);
+  padding: 50px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.web-services {
+  background-color: #b2ff00;
+  border-radius: 30px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+}
+
+.web-services h2 {
+  background: #fff;
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: 800;
+}
+
+.web-services h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 800;
+}
+
+.services-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-box ul {
+  list-style: disc;
+  text-align: left;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  flex: 1 1 65%;
+  padding-left: 20px;
+}
+
+.programming-column {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 30%;
+  max-width: 150px;
+  gap: 15px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.language-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.language-icons img {
+  width: 60px;
+  height: auto;
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  text-orientation:unset;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: black;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+    <div class="about-header">
+    <h1>WEBSITE DESIGNING &
+ <br><span>WEBSITE MANAGEMENT</span></h1>
+
+<section class="web-page">
+  <div class="web-services">
+    <h2>WEBSITE DESIGNING MANAGEMENT</h2>
+    <h3>WEBSITE SERVICES</h3>
+    <div class="services-box">
+      <ul>
+        <li>RESPONSIVE SINGLE/MULTI/LANDING PAGES</li>
+        <li>CUSTOM FORM BLOG SETUP & CUSTOMISATION</li>
+        <li>E-COMMERCE STORE SETUP</li>
+        <li>PRODUCTS MANAGEMENT & INVENTORY INTEGRATION</li>
+        <li>WEB. MAINTENANCE, HOSTING & MANAGEMENT</li>
+        <li>SEO OPTIMIZATION & GOOGLE ANALYTICS INTEGRATION</li>
+        <li>DOMAIN, HOSTING ASSISTANCE & SECURITY ENCHANTMENT</li>
+        <li>MULTI LANGUAGE SUPPORT & CUSTOM ANIMATIONS AN EFFECT</li>
+      </ul>
+<div class="programming-column">
+  <div class="language-icons">
+    <img src="../assets/html-5_5968267.png" alt="HTML" />
+    <img src="../assets/css-3_5968242.png" alt="CSS" />
+    <img src="../assets/c81eb897ee8dba4297d9db2d84bae05b.png" alt="JS" />
+    <img src="../assets/c-sharp_6132221.png" alt="C#" />
+  </div>
+  <div class="vertical-text">PROGRAMMING LANGUAGE</div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Bottom Box: Website UI Designs -->
+   <div class="ui-designs">
+  <h3 style="font-size: 2.7rem; color: #000; background-color: white; padding: 10px; border-radius: 20px;">WEBSITES UI DESIGNS</h3><br><br>
+  <div class="ui-gallery">
+    <div class="ui-column">
+      <img src="../assets/7436705_3562984.jpg" alt="UI 1" />
+      <img src="../assets/1000096015_051464c67bc47e14bd5e3c4d73a78f81-5_31_2025, 1_36_05 AM.jpg" alt="UI 2" />
+    </div>
+    <div class="ui-column">
+      <img src="../assets/1000096019_c7ad7faebefcaf7e6262828614364e53-5_31_2025, 1_35_41 AM.jpg" alt="UI 3" />
+      <img src="../assets/1000096018_d5c4b7f8bd03a9fa56f7e07a42ecb68d-5_31_2025, 1_35_46 AM.jpg" alt="UI 4" />
+    </div>
+
+     <div class="ui-column">
+   <img src="../assets/1000096017_efc7800837d679f42e3325b4e085df20-5_31_2025, 1_35_50 AM.jpg" alt="UI 5" />
+ </div>
+ <div class="ui-column">
+   <img src="../assets/1000096020_54c0803eb8692a302e613c371650b052-5_31_2025, 1_37_39 AM.jpg" alt="UI 6" />
+ </div>
+  </div>
+</div>
+
+</section>
+<section>
+  <!--FAQ SECTION-->
+ <div class="faq-section">
+  <div class="faq-title">Frequently asked <span class="highlight">questions</span></div>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <h3>1. What services does your IT company offer?</h3>
+      <div class="faq-answer">We offer IT consulting, cloud services, infrastructure support, software 
+development, and cybersecurity solutions.</div>
+    </div>
+    <div class="faq-item">
+      <h3>2. How do you ensure data security?</h3>
+      <div class="faq-answer">We use encryption, regular audits, multi-factor authentication, and adhere to 
+global compliance standards.</div>
+    </div>
+    <div class="faq-item">
+      <h3>3. Do you offer 24/7 support?</h3>
+      <div class="faq-answer">Yes, we provide round-the-clock support to ensure your operations never miss a 
+beat.</div>
+    </div>
+    <div class="faq-item">
+      <h3>4. Do you provide training for new systems?</h3>
+      <div class="faq-answer">We offer personalized training sessions tailored to your systems and staff 
+requirements.</div>
+    </div>
+    <div class="faq-item">
+      <h3>5. Can you work with businesses of all sizes?</h3>
+      <div class="faq-answer">Absolutely! We scale our services to fit startups, SMEs, and enterprises.</div>
+    </div>
+    <div class="faq-item">
+      <h3>6. What industries do you specialize in?</h3>
+      <div class="faq-answer">We specialize in healthcare, finance, education, manufacturing, and retail.</div>
+    </div>
+    <div class="faq-item active">
+      <h3>7. How do your pricing plans work?</h3>
+      <div class="faq-answer">Our pricing plans are flexible and transparent, designed to fit budgets. We offer
+detailed proposals after assessing your specific needs.</div>
+    </div>
+    <div class="faq-item">
+      <h3>8. How can I get started?</h3>
+      <div class="faq-answer">Get in touch through our contact page or call us directly to schedule a free 
+consultation.</div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+</section>
+<!--Branding-->
+<section class="hero-brand">
+  <p class="hero-subtitle">LET'S COLLABORATE</p>
+    <h1 class="hero-title" style="font-size: 9rem;"> 
+    ELEVATE YOUR
+  </h1><br>
+  <h1 class="hero-title">
+ BRAND GAME
+</h1>
+  <a href="../Contact us/contact.html" class="hero-button">
+    ↗<br />Get In Touch
+  </a>
+</section>
+
+<!--footer for address and all-->
+<footer class="custom-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="../assets/vdv logo wb.png" alt="Logo" class="footer-logo" />
+      <div class="contact-box">
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+           
+            <p>vinayakadigiverse@gmail.com</p>
+          </div>
+        </div>
+
+         <div class="contact-row">
+   <div class="icon-circle phone">
+     <i class="fas fa-phone-alt"></i>
+   </div>
+   <div>
+     <p>Need help!</p>
+     <h3>+91–7083021583</h3>
+     <h3>+91–9039592878</h3>
+   </div>
+ </div>
+        <div class="contact-row">
+          <div class="icon-circle">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <p>Branch 1:– INDORE - 452009 (M.P.) <br><br>Branch 2:– NAGPUR - 440027 (M.H.)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Quick Link</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none; "><li>Home</li></a>
+          <a href="../about-us.html" style="color: white; text-decoration: none;" ><li>About Us</li></a>
+           <a href="../Blog/blog.html" style="color: white; text-decoration: none;"><li>Blogs</li></a>
+           <a href="../Pricing/Pricing.html" style="color: white; text-decoration: none;"><li>Pricing</li></a>
+           
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+         <a href="../Solutions/SMM&M.html" style="color: white; text-decoration: none;" > <li>SMM&M</li></a>
+          <a href="../Solutions/Website design.html" style="color: white; text-decoration: none;" > <li>Website 
+Designing</li></a>
+
+           <a href="Solutions/content writing.html" style="color: white; text-decoration: none;"><li>Content 
+Writing</li></a>
+           <a href="../Solutions/PROFESSIONAL GRAPHICS.html" style="color: white; text-decoration: none;
+"><li>Professional G../raphics</li></a>
+           <a href="../Solutions/professional photography.html" style="color: white; text-decoration: none;
+">Professional Photography</li></a><br>
+
+           <a href="../Solutions/PROFESSIONAL VIDEO EDITING.html" style="color: white; text-decoration: none;" > 
+<li>Professional Video Editing</li></a>
+     </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Privacy Policy</li></a>
+          <a href="../index.html" style="color: white; text-decoration: none;"><li>Refund Policy</li></a>
+          <a href="../Contact us/contact.html " style="color: white; text-decoration: none;"><li>Contact Us</li></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="about-company">
+    <h2><b>About Our Company</b>  </h2>
+    <p>
+      Amazing design and experiences can only be achieved by talented people.
+      Luckily for us, we are surrounded by amazing talent and that talent
+      transcends their expertise into fantastic experiences. SITEADDA LABS has
+      successfully helped design and implement web sites for many clients
+      worldwide.
+    </p>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© VINAYAKA DIGIVERSE All Rights Reserved.</p>
+    <div class="social-icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-pinterest"></i>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
